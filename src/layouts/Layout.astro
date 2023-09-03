@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import Header from '../components/Header.astro';
 ---
 
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Header/>
 		<slot />
 	</body>
 </html>
@@ -36,4 +38,29 @@ const { title } = Astro.props;
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
+
+	@font-face {
+  font-family: 'Custom';
+font-style: normal;
+  font-weight: medium;
+  src: local('MyFont'), url(../../public/fonts/TuskerGrotesk-1500Medium.ttf) format('ttf');
+}
+	@font-face {
+  font-family: 'Custom';
+font-style: normal;
+  font-weight: bold;
+  src: local('MyFont'), url(../../public/fonts/TuskerGrotesk-1700Bold.ttf) format('ttf');
+}
+	@font-face {
+  font-family: 'Custom';
+font-style: normal;
+  font-weight: super;
+  src: local('MyFont'), url(../../public/fonts/TuskerGrotesk-1800Super.ttf) format('ttf');
+}
+	@font-face {
+  font-family: 'Custom';
+font-style: normal;
+  font-weight: medium;
+  src: local('MyFont'), url(../../public/fonts/TuskerGrotesk-2500Medium.ttf) format('ttf');
+}
 </style>

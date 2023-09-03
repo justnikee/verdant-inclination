@@ -1,0 +1,56 @@
+---
+interface props {
+}
+
+
+---
+
+<div class="navbar">
+    <div class="wrapper">
+    <div class="nav-item">
+        <h2>Nikeeyyy</h2>
+        <p>Build Things For Web!</p>
+    </div>
+    <div class="nav-links">
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact Me</a>
+    </div>
+    </div>
+</div>
+
+<style>
+    .navbar{
+     z-index: 9;
+     position: relative;
+     
+    }
+
+    .wrapper{
+        border-bottom: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: calc(100% - 2rem);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-item{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item h2, .nav-item p{
+        color: #fff;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-right: 20px;
+    }
+
+.nav-links a{
+   margin-right: 10px;
+   color: #fff;
+   font-size: 16px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+</style>
